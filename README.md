@@ -1,2 +1,2 @@
 # algos
-Some basic algorithms written in Python
+Some basic algorithms written in Python.
