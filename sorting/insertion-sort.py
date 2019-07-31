@@ -1,6 +1,7 @@
 from typing import List
 
 
+# O(n^2)
 def insertion_sort(arr: List[int], desc: bool = False) -> List[int]:
     for i, item in enumerate(arr):
         if i == 0:
