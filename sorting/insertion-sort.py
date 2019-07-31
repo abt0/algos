@@ -1,8 +1,11 @@
-def insertion_sort(arr, desc=False):
+from typing import List
+
+
+def insertion_sort(arr: List[int], desc: bool = False) -> List[int]:
     for i, item in enumerate(arr):
         if i == 0:
             continue
-        j = i - 1
+        j: int = i - 1
         while j >= 0 and (arr[j] > item) ^ desc:
             arr[j + 1] = arr[j]
             j -= 1
