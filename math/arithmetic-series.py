@@ -3,14 +3,14 @@
 
 def arithmetic_series(n: int) -> int:
     if n < 0:
-        raise ValueError('Arguments n is not a natural number')
+        raise ValueError('Argument n is not a natural number')
 
     return int((n + 1) * n * 0.5)
 
 
 def arithmetic_series_loop(n: int) -> int:
     if n < 0:
-        raise ValueError('Arguments n is not a natural number')
+        raise ValueError('Argument n is not a natural number')
 
     s: int = 0
 
