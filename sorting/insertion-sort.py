@@ -2,7 +2,7 @@ from typing import List
 
 
 # O(n^2)
-def insertion_sort(arr: List[int], desc: bool = False) -> List[int]:
+def insertion_sort(arr: List[int], desc: bool = False) -> None:
     for i, item in enumerate(arr):
         if i == 0:
             continue
@@ -11,4 +11,3 @@ def insertion_sort(arr: List[int], desc: bool = False) -> List[int]:
             arr[j + 1] = arr[j]
             j -= 1
         arr[j + 1] = item
-    return arr
