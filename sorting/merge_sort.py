@@ -1,13 +1,12 @@
 from typing import List
 
 
-# Divide-and-Conquer
+# O(n lg n) Divide-and-Conquer
 def merge_sort(arr: List[int], desc: bool = False) -> None:
     if len(arr) > 1:
         q = len(arr) // 2
 
-        l_arr = arr[:q]
-        r_arr = arr[q:]
+        l_arr, r_arr = arr[:q], arr[q:]
 
         merge_sort(l_arr, desc)
         merge_sort(r_arr, desc)
