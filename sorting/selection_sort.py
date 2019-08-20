@@ -2,9 +2,9 @@ from typing import List
 
 
 def selection_sort(arr: List[int], desc: bool = False) -> None:
-    for j, item in enumerate(arr[:-1]):
+    for j in range(0, len(arr) - 1):
         m: int = j
-        for i, s_item in enumerate(arr[j:]):
-            if (s_item < arr[m]) ^ desc:
-                m = i + j
+        for i in range(j, len(arr)):
+            if (arr[i] < arr[m]) ^ desc:
+                m = i
         arr[j], arr[m] = arr[m], arr[j]
